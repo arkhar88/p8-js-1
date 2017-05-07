@@ -1,10 +1,7 @@
-var get_text = function (name) {
-  var tab = document.getElementsByClassName(name);
-  for (var i = 0; i<tab.length; i++)
-  {
-    console.log(tab[i].innerText);
-    alert('Give me ' + tab[i].innerText + '!' );
-  }
-};
+var btn = document.getElementById('js-addElem-btn');
+var list = document.getElementById('js-list');
+console.log(list.childElementCount);
 
-get_text('letter-div');
+btn.addEventListener('click', function() {
+    list.innerHTML += '<li>costam ' + (list.childElementCount + 1) + '</li>';
+});

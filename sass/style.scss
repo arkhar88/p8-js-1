@@ -1,29 +1,34 @@
 $text-color: pink;
-
 @mixin trans ($sec) {
-  transition: $sec;
+    transition: $sec;
 }
 
 .letter-div {
-  background-color: white;
-  cursor: pointer;
-  margin-top: 30vh;
-  @include trans(0.3s);
+    background-color: white;
+    cursor: pointer;
+    margin-top: 30vh;
+    @include trans(0.3s);
 }
 
 .letter-div p {
-  font-size: 200px;
-  text-align: center;
-  color: $text-color;
-  @include trans(0.3s);
+    font-size: 200px;
+    text-align: center;
+    color: $text-color;
+    @include trans(0.3s);
 }
 
 .letter-div:hover {
-  background-color: black;
-  @include trans(0.3s);
+    background-color: black;
+    @include trans(0.3s);
 }
 
 .letter-div:hover p {
-  color:white;
-  @include trans(0.3s);
+    color: white;
+    @include trans(0.3s);
+}
+
+#js-addElem-btn,
+#js-list {
+    margin-top: 20px;
+    margin-bottom: 0;
 }
